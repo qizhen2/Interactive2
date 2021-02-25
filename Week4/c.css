@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+.bounding-box{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: #673ab7;
+}
+
+.infinity {
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+    }
+    .infinity:before,
+    .infinity:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 120px;
+      height: 120px;
+      border: 40px solid orange;
+      border-radius: 100px 100px 0 100px;
+      transform: rotate(44deg);
+    }
+    .infinity:after {
+      left: auto;
+      right: 12px;
+      top:285px;
+      bottom:0px;
+      border-radius: 100px 100px 100px 0;
+      transform: rotate(136deg);
+    }
+.infinity:hover{
+      filter: blur(5px);
+    }
+
+.infinity1 {
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+    }
+    .infinity1:before,
+    .infinity1:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: -198px;
+      left: 0;
+      width: 120px;
+      height: 120px;
+      border: 40px solid orange;
+      border-radius: 100px 100px 0 100px;
+      transform: rotate(-45deg);
+    }
+    .infinity1:after {
+      left: auto;
+      right: -271px;
+      top:-198px;
+      bottom:0px;
+      border-radius: 100px 100px 100px 0;
+      transform: rotate(45deg);
+    }
+
+.infinity1:hover{
+      filter: blur(5px);
+    }    
+
+    .infinity2 {
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+    }
+    .infinity2:before,
+    .infinity2:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 86px;
+      left: 0;
+      width: 120px;
+      height: 120px;
+      border: 40px solid orange;
+      border-radius: 100px 100px 0 100px;
+      transform: rotate(-45deg);
+    }
+    .infinity2:after {
+      left: auto;
+      right: -271px;
+      top:86px;
+      bottom:0px;
+      border-radius: 100px 100px 100px 0;
+      transform: rotate(45deg);
+    }
+
+    .infinity2:hover{
+      filter: blur(5px);
+    }

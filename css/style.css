@@ -1,4 +1,10 @@
+@font-face{
+	font-family:"Avara-Black";
+	src: url("../assets/fonts/Avara-Black.woff") format("woff"),
+         url("../assets/fonts/Avara-Black.woff2") format("woff2");
+}
 body { 
+	font-family: Avara-Black;
 	background: orange; 
 	color: pink;
 	font-size: 40px; 
