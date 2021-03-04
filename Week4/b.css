@@ -43,7 +43,7 @@ body{
     }
 
 .infinity:hover{
-      filter: blur(5px);
+      transition-timing-function: ease-in;  
     }
 
 .infinity1 {
@@ -75,7 +75,7 @@ body{
     }
 
     .infinity1:hover{
-      filter: blur(5px);
+      transition-timing-function: steps(6, end);
     }
 
     .infinity2 {
@@ -107,7 +107,7 @@ body{
     }
 
     .infinity2:hover{
-      filter: blur(5px);
+      transition-timing-function: steps(6, end);
     }
 
     .infinity3 {
@@ -139,7 +139,7 @@ body{
     }
 
     .infinity3:hover{
-      filter: blur(5px);
+      transition-timing-function: steps(6, end);
     }
 
     .infinity4 {
@@ -163,6 +163,6 @@ body{
     }
 
     .infinity4:hover{
-      filter: blur(5px);
+      transition-timing-function: steps(6, end);
     }
     
