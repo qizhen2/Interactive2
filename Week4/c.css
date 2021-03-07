@@ -41,11 +41,12 @@ body{
       border-radius: 100px 100px 100px 0;
       transform: rotate(136deg);
     }
-.infinity:hover{
-      filter: blur(5px);
+    .infinity:hover{
+      transition: all 1500ms ease;
+      filter: drop-shadow(16px 16px 20px blue) invert(100%);
     }
 
-.infinity1 {
+    .infinity1 {
       position: relative;
       width: 212px;
       height: 100px;
@@ -73,15 +74,24 @@ body{
       transform: rotate(45deg);
     }
 
-.infinity1:hover{
-      filter: blur(5px);
-    }    
+    .infinity1:hover{
+      transition: all 1500ms ease;
+      filter: drop-shadow(16px 16px 20px blue) invert(100%);
+    } 
+    .infinaity1{
+      display: inline-block;
+      margin: 0 0.5rem;
+
+      animation: bounce; 
+      animation-duration: 5s;
+    }
 
     .infinity2 {
       position: relative;
       width: 212px;
       height: 100px;
       box-sizing: content-box;
+      transition: all 1000ms ease;
     }
     .infinity2:before,
     .infinity2:after {
@@ -105,6 +115,7 @@ body{
       transform: rotate(45deg);
     }
 
-    .infinity2:hover{
-      filter: blur(5px);
+    .infinity2:hover {
+      /*transition-timing-function: steps(6, end);*/
+      background: green
     }

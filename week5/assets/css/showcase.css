@@ -36,17 +36,14 @@ svg path {
 
 
 svg:hover path{
-	fill: yellow;
-}
-
-*{
- animation: fade-out 5s ease 1s forward;
-}
-
-svg path{
   display: inline-block;
   margin: 0 0.5rem;
 
   animation: bounce; 
   animation-duration: 5s;
 }
+
+*{
+ animation: fade-out 5s ease 1s forward;
+}
+
