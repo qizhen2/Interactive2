@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+.bounding-box{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: black;
+}
+
+.infinity{
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+    }
+    .infinity:before,
+    .infinity:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 0px;
+      left: 90px;
+      width: 120px;
+      height: 120px;
+      border: 40px solid #ffa50000;
+      border-radius: 100px 100px 0 100px;
+      transform: rotate(45deg);
+      background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+      background-size:400%; 
+    }
+    .infinity:after {
+      left: auto;
+      right: -78px;
+      top:283px;
+      bottom:0px;
+      border-radius: 100px 100px 100px 0;
+      transform: rotate(135deg);
+      background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+      background-size:400%;
+    }
+
+    .infinity:hover {
+      animation: sun 8s infinite;
+      transition: all 1500ms ease;
+      filter: drop-shadow(16px 16px 20px blue) invert(100%);
+    }
+@keyframes sun{
+  100%{
+    background-position:-400% 0;
+  }
+}
+@keyframes animate  {
+  0% {
+    content: "infinity::after";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: "infinity::before";
+  }
+}
+
+.infinity::after {
+  animation: changeLetter 3s linear infinite alternate;
+}

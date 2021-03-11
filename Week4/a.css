@@ -11,7 +11,9 @@ body{
     position: relative;
     width: 500px;
     height: 600px;
-    background: #673ab7;
+    background: black;
+    top:0;
+    right:-500px;
 }
 
 .infinity {
@@ -46,8 +48,6 @@ body{
       filter: blur(5px);
     }
 
-#infinity5 {
-      border: 1px solid black;
 }
 
 .desc {
