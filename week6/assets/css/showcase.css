@@ -39,7 +39,7 @@ svg:hover path{
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: bounce; 
+  animation: flash; 
   animation-duration: 5s;
 }
 
@@ -47,14 +47,3 @@ svg:hover path{
  animation: fade-out 5s ease 1s forward;
 }
 
-@keyframes animate  {
-  0% {
-    padding: "infinity::after";
-  }
-  50% {
-    color: white;
-  }
-  100% {
-    padding: "infinity::before";
-  }
-}
