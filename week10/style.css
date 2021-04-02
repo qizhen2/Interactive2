@@ -16,11 +16,11 @@ body {
 }
 
 #grid {
-	width: 900px;
-	height: 900px;
-	border: 10px solid black;
+	width: 500px;
+	height: 500px;
+	border: 10px #fff;
 
-	background: black;
+	background: #fff;
 
 	/* uncomment below to enable the grid */
 
@@ -35,6 +35,10 @@ body {
 	background: blue;
 }
 
+.item:hover {
+  background-color: yellow;
+}
+
 /* uncomment below to alter the shape */
 
 #a {
@@ -43,7 +47,16 @@ body {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	background: red;
-}*/
+}
+
+#b {
+	grid-row-start: 1;
+	grid-row-end: 2; 
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background: yellow;
+}
+
 
 /* uncomment below to adjust with a media query */
 
