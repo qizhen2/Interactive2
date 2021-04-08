@@ -41,7 +41,7 @@ body
 }
 body:before
 {
-	content: 'Emotional Experience Shop';
+	content: '';
 	position: fixed;
 	top:50%;
 	left:50%;
@@ -160,7 +160,7 @@ section:nth-child(even) .container .container
 	top: 180px;
 	width: 150px;
 	height: 70px;
-	background: #b57700;
+	background: orange;
 	border-bottom-left-radius: 70px;
 	border-bottom-right-radius: 70px;
 	transition: 0.5s;
@@ -170,7 +170,7 @@ section:nth-child(even) .container .container
 	top: 210px;
 	width: 150px;
 	height: 20px;
-	background: #b57700;
+	background: orange;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
