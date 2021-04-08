@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0px;
     padding: 0px;
 }
@@ -31,7 +31,10 @@ a::before {
   background-size: 400%;
   border-radius: 50px;
   filter: blur(20px);
-
+  z-index: -1;
+}
+a: hover::before{
+  animation: sun 8s infinite; 
 }
 a: hover{
   animation: sun 8s infinite; 
