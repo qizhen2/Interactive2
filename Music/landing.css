@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 ul, ol {
@@ -14,12 +15,39 @@ body {
 	align-items: center;
 }
 .title {
+	position: relative;
 	font-family: 'BC Liguria';
 	font-style: large;
 	font-size: 5em;
 	text-shadow: 3em;
 	text-transform: uppercase;
-	top: 30px;
+	top: -80px;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header ul{
+	position: relative;
+	display: flex;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	color: black;
+	text-decoration: none;
 }
 ul {
     height: 200px;
