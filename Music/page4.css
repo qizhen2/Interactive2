@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: #F2D19F;
+	background: #D7F0FF;
 	height: 50vh;
 	display: flex;
 	justify-content: center;
@@ -13,12 +13,6 @@ p{
 	letter-spacing: 5px;
 	text-align: center;
 }
-.content{
-	font-family: 'BC Liguria';
-	font-size: 36px;
-	letter-spacing: 5px;
-	text-align: center;
-}
 .middle{
 	position: relative;
 	top: 164%;
@@ -27,78 +21,80 @@ p{
 }
 .bar1{
 	width: 280px;
-	height: 480px;
-	background: #F2D19F;
+	height: 280px;
+	background: #D7F0FF;
 	display: inline-block;
 	transform-origin: bottom center;
 	animation: loading 2s ease-in-out;
 }
 .bar2{
 	width: 280px;
-	height: 480px;
-	background: #F8CA86;
+	height: 380px;
+	background: #B7E4F8;
 	display: inline-block;
 	transform-origin: bottom center;
 	animation: loading 2.5s ease-in-out;
 }
 .bar3{
 	width: 280px;
-	height: 480px;
-	background: #F2BE6F;
+	height: 340px;
+	background: #87D3FE;
 	display: inline-block;
 	transform-origin: bottom center;
 	animation: loading 3s ease-in-out;
 }
 .bar4{
 	width: 280px;
-	height: 680px;
-	background: #F1A533;
+	height: 480px;
+	background: #55C0FC;
 	display: inline-block;
 	transform-origin: bottom center;
 	animation: loading 3.5s ease-in-out;
 }
 .bar5{
 	width: 280px;
-	height: 880px;
-	background: #FA9600;
+	height: 680px;
+	background: #049DF3;
 	display: inline-block;
 	transform-origin: bottom center;
 	animation: loading 4s ease-in-out;
 }
-.bar1{
-	animation-delay: 0.1s;
+.bar1 p{
+	font-family: 'BC Liguria';
+	font-size: 36px;
+	letter-spacing: 5px;
+	text-align: center;
 }
-.bar2{
-	animation-delay: 0.2s;
+.bar2 p{
+	font-family: 'BC Liguria';
+	font-size: 36px;
+	letter-spacing: 5px;
+	text-align: center;
 }
-.bar3{
-	animation-delay: 0.3s;
+.bar3 p{
+	font-family: 'BC Liguria';
+	font-size: 36px;
+	letter-spacing: 5px;
+	text-align: center;
 }
-.bar4{
-	animation-delay: 0.4s;
+.bar4 p{
+	font-family: 'BC Liguria';
+	font-size: 36px;
+	letter-spacing: 5px;
+	text-align: center;
 }
-.bar5{
-	animation-delay: 0.5s;
-}
-
-@keyframes loading {
-	0%{
-		transform: scaleY(0.1);
-	}
-	50%{
-		transform: scaleY(1);
-	}
-	100%{
-		transform: scaleY(0.1);
-		background: transparent;
-	}
+.bar5 p{
+	font-family: 'BC Liguria';
+	font-size: 36px;
+	letter-spacing: 5px;
+	text-align: center;
 }
 .button ul a{
 	position: relative;
 	text-decoration: none;
 	font-size: 1.5em;
 	padding: 0 20px;
-	color: orange;
+	color: blue;
 	font-weight: 300;
 	text-transform: uppercase;
 	display: inline-block;
