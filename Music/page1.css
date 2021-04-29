@@ -9,6 +9,33 @@ body{
 	letter-spacing: 5px;
 	text-align: center;
 }
+.content span{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.content span.active{
+	animation: smoke 2s linear forwards;
+}
+@keyframes smoke
+{
+	0%
+	{
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+	}
+	50%{
+		opacity: 1;
+		pointer-events: none;
+	}
+	100%
+	{
+		opacity: 1;
+		filter: blur(20px);
+		transform: translateX(300) translateY(-300) rotate(720deg) scale(4);
+	}
+}
 .content ul  a
 {
 	position: relative;
@@ -27,6 +54,7 @@ body{
 	top: 95%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	width: 1600px;
 }
 .bar1{
 	width: 50px;
@@ -105,9 +133,6 @@ body{
 }
 .bar7{
 	animation-delay: 0.7s;
-}
-.bar8{
-	animation-delay: 0.8s;
 }
 @keyframes loading {
 	0%{

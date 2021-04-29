@@ -13,7 +13,7 @@ p{
 	letter-spacing: 5px;
 	text-align: center;
 }
-.middle{
+.container{
 	position: relative;
 	top: 164%;
 	left: 50%;
@@ -89,15 +89,16 @@ p{
 	letter-spacing: 5px;
 	text-align: center;
 }
-.button ul a{
+.content ul  a
+{
 	position: relative;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 0.5em;
 	padding: 0 20px;
-	color: blue;
+	color: deeppink;
 	font-weight: 300;
 	text-transform: uppercase;
 	display: inline-block;
-	top: -50px;
+	top: 0;
 	left: 0;
 }

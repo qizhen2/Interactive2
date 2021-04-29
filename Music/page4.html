@@ -7,13 +7,23 @@
         <title>Page 4</title>
     </head>
     <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <body>
-        <div class="middle">
+        <div class="container">
             <div class="bar bar1"><p>When you feel</br> music",</p></div>
             <div class="bar bar2"><p>anxious,you</br>Rossini's</p></div>
             <div class="bar bar3"><p>can listen to</br>"William tyre"</p></div>
             <div class="bar bar4"><p>Haydn's "Royal</br>Borodin's</p></div>
             <div class="bar bar5"><p>Fireworks</br>"dance of Tartars".</p></div>
+            <script type="text/javascript"></script>
+            const text = baffle(".bar");
+            text.set({
+                    characters : '█>█ /<▓▓█ >▓░▒> ░█▒ ░░▓▓▒ >>░▒ ▒█> ░▓█▒ ▓<░▓'
+                    speed: 120
+        })
+            text.start();
+            text.reveal(4000);
+            </script>
         <section>
             <div class="button">
             <ul>
