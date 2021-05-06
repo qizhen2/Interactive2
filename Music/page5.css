@@ -30,3 +30,25 @@ section .text span
 	display: inline-block;
 	cursor: pointer;
 }
+section .text span.active
+{
+	animation: smoke 2s linear forwards;
+}
+@keyframes smoke
+{
+	0%
+	{
+		opacity: 1;
+		filter: blur(0);
+	}
+	50%
+	{
+		opacity: 1;
+		pointer-events: none;
+	}
+	100%
+	{
+		opacity: 0;
+		filter: blur(20px);
+	}
+}

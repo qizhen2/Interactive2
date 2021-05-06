@@ -3,19 +3,20 @@ body{
 	padding: 0;
 	background: #FACACA;
 }
-.content{
+.box{
 	font-family: 'BC Liguria';
 	font-size: 36px;
 	letter-spacing: 5px;
 	text-align: center;
 }
-.content span{
+.box span{
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
 }
-.content span.active{
+.box span.active{
 	animation: smoke 2s linear forwards;
+	transform-origin: bottom;
 }
 @keyframes smoke
 {

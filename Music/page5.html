@@ -21,3 +21,31 @@
         </script>
     </body>
     </html>
+    <!--
+    var e = document.querySelector('#text');
+        
+        e.innerHTML = e.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span class="word">$2</span>');
+
+        e.addEventListener('mouseover', function(ev) {
+           if (ev.target.classList.contains('word')) {
+               ev.target.classList.toggle('active');
+           }
+        }, true);
+
+        var e = document.querySelector('#text');
+
+            e.innerHTML = e.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span class="word">$2</span>');
+
+            e.addEventlistener('mouseover', function(ev) {
+                if (ev.target.classList.contains('word')) {
+                    ev.target.classList.toggle('active');
+                }
+            }, true);
+
+        let b = baffle('.bar p', {
+            characters: '█>█ /<▓▓█ >▓░▒> ░█▒ ░░▓▓▒ >>░▒ ▒█> ░▓█▒ ▓<░▓',
+            speed: 120
+        });
+
+        
+           b.reveal(4000);

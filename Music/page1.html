@@ -2,28 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width,initical-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="page1.css">
         <title>Page 1</title>
     </head>
     <link rel="icon" type="image/png" href="favicon.png">
     <body>
-        <div class="content">
+        <div class="box">
             <p id="text"><span>The benefits of listening to music often can help people eliminate work stress, reduce the pressure of life, and avoid all kinds of chronic diseases. In fact, these are based on medical evidence. In medical research, it has been found that frequent exposure to music rhythm and melody can have certain effects on brain waves, heart beat, gastrointestinal peristalsis, nerve induction, etc., thus promoting physical and mental health. The invisible power of music is far beyond one's imagination, so listening to and appreciating music is a very common adjustment of modern people's life.</span></p>
             <ul>
                 <a href="page2.html">Next</a></li>
             </ul>
         </div>
         <script type="text/javascript">
-            var e = document.querySelector('text');
+            var e = document.querySelector('#text');
+        
+        e.innerHTML = e.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span class="word">$2</span>');
 
-            e.innerHTML = e.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span class="word">$2</span>');
-
-            e.addEventlistener('mouseover', function(ev) {
-                if (ev.target.classList.contains('word')) {
-                    ev.target.classList.toggle('active');
-                }
-            }, true);
+        e.addEventListener('mouseover', function(ev) {
+           if (ev.target.classList.contains('word')) {
+               ev.target.classList.toggle('active');
+           }
+        }, true);
         </script>
         <!--
         
