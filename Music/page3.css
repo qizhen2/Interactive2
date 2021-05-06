@@ -24,8 +24,8 @@ section ul li p{
 	letter-spacing: 5px;
 	text-align: center;
 	animation: myfirst 5s 2;
-    animation-direction: alternate;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    animation-direction: alternate;background: yellow;
+    
 }
 
 
