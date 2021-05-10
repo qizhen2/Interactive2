@@ -4,12 +4,128 @@
          url("../assets/fonts/Avara-Black.woff2") format("woff2");
 }
 body { 
+	margin: 0;
+	padding: 0;
 	font-family: Avara-Black;
-	background: orange; 
+	background: white; 
 	color: pink;
-	font-size: 40px; 
+	font-size: 40px;
+	justify-content: center;
+	align-items: center; 
+}
+section {
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+p {
+	background: none;
+	justify-content: center;
+	align-items: center; 
+}
+h1 {
+	justify-content: center;
+	align-items: center;
 }
 
-p {
-	background: green; 
+h3 {
+	text-align: center;
+	list-style: none;
+}
+section ul {
+	position: relative;
+}
+
+section ul li {
+	text-align: center;
+	list-style: none;
+}
+
+section ul li a {
+	color: #333;
+	text-decoration: none;
+	padding: 5px 20px;
+	display: inline-flex;
+	font-weight: 700;
+	transition: 0.5s;
+}
+section ul:hover li a {
+	color: #002;
+}
+section ul li:hover a {
+	color: #000;
+	background: pink;
+}
+section ul li a:before {
+	content: '';
+	position: absolute;
+	top: -20%;
+	left: -20%;
+	display: flex;
+	justify-content: center;
+	color: rgba(0,0,0,.1);
+	border-radius: 50%;
+	z-index: -1;
+	font-weight: 900;
+	font-size: 5em;
+	opacity: 0;
+	letter-spacing: 500px;
+	transition: letter-spacing 0.5s,left 0.5s;
+}
+section ul li a:hover:before {
+	content: attr(data-text);
+	opacity: 1;
+	letter-spacing: 10px;
+	width: 1800px;
+	height: 1800px;
+}
+section ul li:nth-child(6n+1) a:before {
+	background: #81ecec;
+}
+section ul li:nth-child(6n+2) a:before {
+	background: #ff7675;
+}
+section ul li:nth-child(6n+3) a:before {
+	background: #55efc4;
+}
+section ul li:nth-child(6n+4) a:before {
+	background: #a29bfe;
+}
+section ul li:nth-child(6n+5) a:before {
+	background: #fd79a8;
+}
+section ul li:nth-child(6n+6) a:before {
+	background: #ffeaa7;
+}
+section ul li:nth-child(6n+7) a:before {
+	background: #81ecec;
+}
+section ul li:nth-child(6n+8) a:before {
+	background: #ff7675;
+}
+button{
+	font-size: 3rem;
+	font-weight: bold;
+	border: 5px solid var(--accent-color);
+	background: transparent;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+	border: 4px;
+}
+
+button:hover{
+	background: rgb(200 200 200);
+	cursor: pointer;
+}
+.darkmode {
+	background: black;
+	color: white;
+
+	/*	redefine a CSS variable */
+	--accent-color: rgb(0,255,0);
+}
+
+.darkmode button{
+	color: white;
 }

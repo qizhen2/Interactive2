@@ -1,51 +1,42 @@
   
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>[qizhen li] Interactive Site</title>
+  <title>qizhen li Interactive Site</title>
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
   <link rel="icon" type="image/png" href="favicon.png">
 <body>
-
-  <!-- this is where my code is-->
-  <div id="container">
-    
-    <pre>
- _._     _,-'""`-._
-(,-.`._,'(       |\`-/|
-    `-.-' \ )-`( , o o)
-          `-    \`_`"'-
-
-    </pre>
-
+  <button id="darkmode">🌛</button>   
+  <section>
     <!-- about me-->
-    <h1>[qizhen li]</h1>  
+    <h1>Qizhen Li</h1>  
     <p class="desc">I am a Graphic Design student.</p>
     
     <!-- my work -->
-    <div id="exercises">
+    <div id="exercise">
       <h3>Exercises</h3>
       <ul>
-        <li><a href="Screenshot1.png">Inspector Sketch</a></li>
-        <li><a href="still-life/index.html">Cup</a></li>
-        <li><a href="week10/index.html">Grid</a></li>
-        <li><a href="week5/character.html">Character</a></li>
+        <li><a href="Screenshot1.png" data-text="Inspector Sketch">Inspector Sketch</a></li>
+        <li><a href="still-life/index.html" data-text="Cup">Cup</a></li>
+        <li><a href="week10/index.html" data-text="Grid">Grid</a></li>
+        <li><a href="week5/character.html" data-text="Character">Character</a></li>
       </ul>
-    
     </div>
     
     <div id="projects">
       <h3>Projects</h3>
       <ul>
-        <li><a href="#">P1</a></li>
-        <li><a href="week4/c.html">C</a></li>
-        <li><a href="Community Archive/cover.html">Community Archive</a></li>
-        <li><a href="Music/landing.html">Listen to more music</a></li>
+        <li><a href="#" data-text="P1">P1</a></li>
+        <li><a href="week4/c.html" data-text="C">C</a></li>
+        <li><a href="Community Archive/cover.html" data-text="Community Archive">Community Archive</a></li>
+        <li><a href="Music/landing.html" data-text="Zine">Zine</a></li>
       </ul>
 
+    </section>
 
     </div>
   </div>
